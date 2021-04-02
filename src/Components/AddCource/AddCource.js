@@ -11,10 +11,10 @@ const AddCource = (props) => {
      total=total + element.price
  }
     return (
-        <div>
-            <h5>Cource Added :{props.addCources.length}</h5>
+        <div  className="mt-5 pt-5 bg-dark vh-100 text-light text-left">
+            <p>Cource Added :{props.addCources.length}</p>
             <p><strong>Total-Prize: ${total}</strong></p>
-            <button className="btn btn-danger">Confirm Order</button>
+            <button className="btn btn-danger btn-lg">Confirm Order</button>
             <hr/>
             <h5>Selected Cource</h5>
             {

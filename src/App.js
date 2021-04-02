@@ -11,19 +11,28 @@ function App() {
    
   }
   return (
-    <div className="App">
+    <section className="container App">
+
+    
+    <div className="row">
      
-     <div className="cource">
-     {cource.map(cource=>{
-       return <Cources key={cource._id} handleAddCource={handleAddCource} cource={cource}/>
-     })}
+     <div className="col-md-10">
+       <div className="row">
+       
+        <Cources cource={cource} handleAddCource={handleAddCource} /> 
+    
+
+       </div>
+    
 
      </div>
-     <div>
+     <div className="col-md-2">
     
-     </div>
+     
       <AddCource addCources={addCources}/> 
+      </div>
     </div>
+    </section>
   );
 }
 
